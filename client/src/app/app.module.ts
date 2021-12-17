@@ -42,6 +42,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 
     RouterModule.forRoot([
       { path: 'home', component: HomePageComponent },
+      { path: 'home/login', component: LoginComponent },
       { path: 'user', component: UserProfileComponent },
       { path: 'user/update', component: UpdateProfileComponent },
       { path: 'users/signup', component: SignupComponent },
