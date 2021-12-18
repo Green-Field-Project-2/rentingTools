@@ -13,8 +13,8 @@ import { UpdateProfileComponent } from './update-profile/update-profile.componen
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { SignupComponent } from './signup/signup.component';
 import { AdminComponent } from './admin/admin.component';
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireStorageModule } from 'angularfire2/storage';
+// import { AngularFireModule } from 'angularfire2';
+// import { AngularFireStorageModule } from 'angularfire2/storage';
 
 @NgModule({
   declarations: [
@@ -26,8 +26,7 @@ import { AngularFireStorageModule } from 'angularfire2/storage';
     SignupComponent,
     ToolsComponent,
     AdminComponent,
-    ForgotPasswordComponent
-
+    ForgotPasswordComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,17 +37,15 @@ import { AngularFireStorageModule } from 'angularfire2/storage';
 
     FormsModule,
     HttpClientModule,
-    
+
     RouterModule.forRoot([
       { path: '', component: LoginComponent },
       { path: 'user', component: UserProfileComponent },
       { path: 'user/update', component: UpdateProfileComponent },
-      { path:'users/signup',component: SignupComponent},
-      { path:'tools',component: ToolsComponent},
-      {path: 'user/forgot', component: ForgotPasswordComponent}
-
+      { path: 'users/signup', component: SignupComponent },
+      { path: 'tools', component: ToolsComponent },
+      { path: 'user/forgot', component: ForgotPasswordComponent },
     ]),
-
   ],
   providers: [],
   bootstrap: [AppComponent],
